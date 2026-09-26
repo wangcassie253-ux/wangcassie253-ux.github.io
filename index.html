@@ -54,7 +54,7 @@
 // Add your details here. Empty links are never shown as clickable buttons.
 window.PORTFOLIO = {
   name: "Cassie Wang",
-  email: "",
+  email: "cassiewang160@gmail.com",
   github: "https://github.com/wangcassie253-ux",
   linkedin: "https://www.linkedin.com/in/cassie-w-b96bb7286/",
   resume: "",
@@ -115,7 +115,7 @@ document.querySelectorAll('[data-project]').forEach(button => button.addEventLis
 document.querySelector('.close-dialog').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
 const contacts=[];
-if(profile.email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(profile.email)) contacts.push(['Email',`mailto:${profile.email}`]);
+if(profile.email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(profile.email)) contacts.push(['Email me',`mailto:${profile.email}`]);
 for(const [key,label] of [['github','GitHub'],['linkedin','LinkedIn'],['resume','Résumé']]) if(profile[key] && safeUrl(profile[key])) contacts.push([label,safeUrl(profile[key])]);
 if(contacts.length){document.querySelector('#contact-links').replaceChildren(...contacts.map(([label,href])=>{const a=document.createElement('a');a.href=href;a.textContent=`${label} ↗`;if(!href.startsWith('mailto:')){a.target='_blank';a.rel='noopener noreferrer';}return a;}));}
 
