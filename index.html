@@ -45,13 +45,13 @@ header{display:grid;grid-template-columns:1fr auto 1fr}.social-links{justify-sel
 <div class="view-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="portfolio-title">Made with <em>curiosity.</em></h2></div></div>
 <div class="project-grid">
 <button class="project-card dinner" type="button" data-project="dinner"><span class="card-top"><span>01 / COURSE PROJECT</span><span>iOS APP</span></span><span class="card-wordmark">dinner<br><em>pending.</em></span><span class="card-caption"><span><strong>Dinner Pending</strong><span>In development</span></span><span class="circle-arrow" aria-hidden="true">↗</span></span></button>
-<button class="project-card romance" type="button" data-project="romance"><span class="card-top"><span>02 / PERSONAL PROJECT</span><span>WEB EXPERIENCE</span></span><span class="romance-title"><span class="romance-flourish" aria-hidden="true">✧</span><em>Between<br>the choices.</em></span><span class="card-caption"><span><strong>Romance, on the web</strong><span>In development</span></span><span class="circle-arrow" aria-hidden="true">↗</span></span></button>
+<button class="project-card romance" type="button" data-project="romance"><span class="card-top"><span>02 / PERSONAL PROJECT</span><span>WEB EXPERIENCE</span></span><span class="romance-title"><span class="romance-flourish" aria-hidden="true">✧</span><em>Romance<br>Log.</em></span><span class="card-caption"><span><strong>Romance Log</strong><span>In development</span></span><span class="circle-arrow" aria-hidden="true">↗</span></span></button>
 </div>
 <p class="section-footnote">Select a project to take a closer look.</p>
 </section>
 <section class="view content-view about-view" id="about" aria-labelledby="about-title" hidden>
 <aside class="experience-card" aria-label="Current work experience"><p class="eyebrow">CURRENT EXPERIENCE</p><h3>Xero<span>.</span></h3><p class="experience-role">Customer Experience Specialist<br>– Accounting</p><p class="experience-date">Jan 2025 – Present</p><p class="experience-summary">Supporting customers with Xero’s accounting software, investigating queries and explaining solutions clearly.</p><div class="experience-tags"><span>Customer support</span><span>Problem solving</span><span>Communication</span></div></aside>
-<div class="about-copy"><p class="eyebrow">02 / A LITTLE ABOUT ME</p><h2 id="about-title">Always a <em>learner.</em><br>Always a builder.</h2><p class="lead">Hi, I’m Cassie — a Bachelor of Information Technology student at Monash University, majoring in Software Development.</p><p class="graduation">Expected graduation · July 2027</p><p>Alongside my studies, I work at Xero in customer experience. I’m also building an iOS coursework app and a personal romance game for the web.</p><p>I’m open to internships and graduate roles across IT, where I can contribute, learn from experienced teams and grow.</p><details class="technical-skills"><summary>View technical skills <span aria-hidden="true">+</span></summary><div class="skill-groups"><section class="skill-group"><h3>Languages</h3><div class="languages"><span>Java</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Swift</span><span>C</span><span>SQL</span><span>PHP</span><span>Ruby</span></div></section><section class="skill-group"><h3>Web</h3><div class="languages"><span>HTML</span><span>CSS</span><span>React</span><span>Svelte</span><span>Bootstrap</span></div></section><section class="skill-group"><h3>Databases &amp; cloud</h3><div class="languages"><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>Firebase</span><span>Supabase</span></div></section><section class="skill-group"><h3>Tools &amp; testing</h3><div class="languages"><span>Git</span><span>Docker</span><span>Jest</span><span>JUnit</span><span>Xcode</span><span>VS Code</span></div></section></div></details></div>
+<div class="about-copy"><p class="eyebrow">02 / A LITTLE ABOUT ME</p><h2 id="about-title">Always a <em>learner.</em><br>Always a builder.</h2><p class="lead">Hi, I’m Cassie — a Bachelor of Information Technology student at Monash University, majoring in Software Development.</p><p class="graduation">Expected graduation · July 2027</p><p>Alongside my studies, I work at Xero in customer experience. I’m also building an iOS coursework app and a personal game journal for the web.</p><p>I’m open to internships and graduate roles across IT, where I can contribute, learn from experienced teams and grow.</p><details class="technical-skills"><summary>View technical skills <span aria-hidden="true">+</span></summary><div class="skill-groups"><section class="skill-group"><h3>Languages</h3><div class="languages"><span>Java</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Swift</span><span>C</span><span>SQL</span><span>PHP</span><span>Ruby</span></div></section><section class="skill-group"><h3>Web</h3><div class="languages"><span>HTML</span><span>CSS</span><span>React</span><span>Svelte</span><span>Bootstrap</span></div></section><section class="skill-group"><h3>Databases &amp; cloud</h3><div class="languages"><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>Firebase</span><span>Supabase</span></div></section><section class="skill-group"><h3>Tools &amp; testing</h3><div class="languages"><span>Git</span><span>Docker</span><span>Jest</span><span>JUnit</span><span>Xcode</span><span>VS Code</span></div></section></div></details></div>
 </section>
 </main>
 <footer><span class="availability"><span aria-hidden="true"></span> Open to opportunities</span><span class="footer-name">CASSIE WANG <span>© <span id="year">2026</span></span></span><span class="page-counter"><span id="page-number">01</span> <span class="counter-line"></span> 03</span></footer>
@@ -65,7 +65,7 @@ window.PORTFOLIO = {
   linkedin: "https://www.linkedin.com/in/cassie-w-b96bb7286/",
   resume: "",
   dinnerUrl: "",
-  romanceUrl: ""
+  romanceUrl: "https://romance-log.romancelog-app.workers.dev/"
 };
 </script><script>const profile = window.PORTFOLIO || {};
 const pages = ['home', 'portfolio', 'about'];
@@ -102,7 +102,7 @@ setPage(location.hash.slice(1));
 document.querySelector('#year').textContent = new Date().getFullYear();
 const projects = {
   dinner: {title:'Dinner Pending',type:'COURSE PROJECT / iOS',description:'An iOS app I’m developing as part of my IT coursework.',progress:'The app is in development. A feature walkthrough, technical details and my specific contribution will be added as the project takes shape.',url:profile.dinnerUrl},
-  romance: {title:'乙游恋爱巨鹿',type:'PERSONAL PROJECT / WEB',description:'A personal romance game for the web, developed with AI assistance.',progress:'I’m currently working on login, a database and cloud saves, connecting the player experience with the software behind it.',url:profile.romanceUrl}
+  romance: {title:'Romance Log',type:'PERSONAL PROJECT / WEB',description:'A personal game journal for discovering otome games and visual novels, tracking play progress and recording ratings. Developed with AI assistance.',progress:'The website is live and still evolving. Explore the game library, search and filter titles, and keep a personal collection.',url:profile.romanceUrl}
 };
 document.querySelectorAll('[data-project]').forEach(button => button.addEventListener('click', () => {
   const project = projects[button.dataset.project];
@@ -113,7 +113,7 @@ document.querySelectorAll('[data-project]').forEach(button => button.addEventLis
   const links = document.querySelector('#dialog-links');
   links.replaceChildren();
   if(project.url && safeUrl(project.url)) {
-    const a = document.createElement('a');a.href = safeUrl(project.url);a.textContent = 'Visit project ↗';a.target = '_blank';a.rel = 'noopener noreferrer';links.append(a);
+    const a = document.createElement('a');a.href = safeUrl(project.url);a.textContent = button.dataset.project === 'romance' ? 'Visit website ↗' : 'Visit project ↗';a.target = '_blank';a.rel = 'noopener noreferrer';links.append(a);
   } else { const p = document.createElement('p');p.className='unavailable';p.textContent='Live preview coming soon.';links.append(p); }
   dialog.showModal();
 }));
